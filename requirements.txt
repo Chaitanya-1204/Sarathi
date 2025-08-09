@@ -1,1 +1,13 @@
+# Github
 GitPython
+
+# Core LangChain libraries
+langchain
+langchain-core
+langchain-community
+langchain-chroma
+
+# OpenAI integration for embeddings
+langchain-openai
+openai
+
