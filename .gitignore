@@ -210,3 +210,4 @@ __marimo__/
 repositories/
 logs/
 vector_stores/
+testing.py

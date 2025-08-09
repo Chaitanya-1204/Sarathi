@@ -11,3 +11,5 @@ langchain-chroma
 langchain-openai
 openai
 
+
+Flask

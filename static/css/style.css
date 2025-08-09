@@ -1,0 +1,67 @@
+/* Use the Inter font family defined in the HTML */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for a more integrated look */
+#chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: #4a5568; /* gray-600 */
+    border-radius: 20px;
+    border: 3px solid #1a202c; /* gray-900 */
+}
+
+/* Typing indicator animation */
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #a0aec0; /* gray-400 */
+    border-radius: 50%;
+    animation: typing-animation 1.2s infinite ease-in-out;
+}
+
+@keyframes typing-animation {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1.0);
+    }
+}
+
+/* --- New Styles for Formatted Output --- */
+
+.message-bubble h3 {
+    @apply text-lg font-semibold mt-4 mb-2;
+}
+
+.message-bubble p {
+    @apply mb-3;
+}
+
+.message-bubble ul, .message-bubble ol {
+    @apply list-inside list-disc pl-4 mb-3;
+}
+
+.message-bubble ol {
+    @apply list-decimal;
+}
+
+.message-bubble li {
+    @apply mb-1;
+}
+
+.message-bubble code {
+    @apply bg-gray-900 text-indigo-300 rounded-md px-1.5 py-0.5 text-sm font-mono;
+}
+
+.message-bubble strong {
+    @apply font-bold text-indigo-300;
+}
